@@ -1,0 +1,39 @@
+{
+  "name": "news-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently --kill-others \"npm run serve\" \"next\"",
+    "build": "next build",
+    "start": "next start",
+    "serve": "ts-node -O '{\"module\": \"commonjs\"}' ./server/index.ts",
+    "local": "next dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/react-redux": "^7.1.18",
+    "@types/styled-components": "^5.1.11",
+    "babel-plugin-styled-components": "^1.13.2",
+    "body-parser": "^1.19.0",
+    "concurrently": "^6.2.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "next": "^11.0.1",
+    "next-redux-wrapper": "^6.0.0",
+    "node-fetch": "^2.6.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-redux": "^7.2.4",
+    "styled-components": "^5.3.0",
+    "ts-node": "^10.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^16.3.1",
+    "@types/react": "^17.0.14",
+    "typescript": "^4.3.5"
+  }
+}
